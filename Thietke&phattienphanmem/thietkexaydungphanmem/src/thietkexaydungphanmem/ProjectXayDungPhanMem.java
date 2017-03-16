@@ -24,12 +24,12 @@ public class ProjectXayDungPhanMem {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        String[] arrayWords = new String[]{"ca"};
+        String[] arrayWords = new String[]{"pia"};
         ProjectXayDungPhanMem pr = new ProjectXayDungPhanMem();
         pr.listRules = new ArrayList<>();
 
 //        pr.listRules.add(new Rule4());
-        pr.listRules.add(new Rule8());
+        pr.listRules.add(new Rule9());
         for (String word : arrayWords) {
             for (Rule rule : pr.listRules) {
                 if (!rule.isValid(word)) {
