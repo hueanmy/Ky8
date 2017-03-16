@@ -1,0 +1,39 @@
+package Rule;
+
+/**
+ * Created by katie on 16/03/2017.
+ */
+public class Rule45C extends Rule{
+    @Override
+    public boolean isValid(String x) {
+        boolean check = false;
+        String[] words = {"ngửi","gửi","chửi","ngửa","lửa","cửa","mửa","thửa","cửi"};
+        if("ử".contains(x.charAt(x.length()-1)+"")){
+            return true;
+        }
+        for(int i=0;i<x.length()-1;i++){
+            if("ử".contains(x.charAt(i)+"")){
+                if("i a".contains(x.charAt(i+1)+""))
+                    check = true;
+                    break;
+            }
+        }
+        if(check==true){
+           for(String c : words){
+               if(x.equals(c)){
+                   check = true;
+                   break;
+               }
+               else{
+                   check = false;
+               }
+           }
+        }
+        return check;
+    }
+
+    @Override
+    public void showError() {
+        System.out.println("Rule45C error");
+    }
+}

@@ -1,5 +1,5 @@
 package Rule;
-// con sai sot
+// con sai sot khi phu am dung 1 minh test tu "tieng"
 
 /**
  * Created by katie on 14/03/2017.
@@ -27,6 +27,8 @@ public class Rule9 extends Rule {
                 if (consonants.contains(x.charAt(i) + "")) {
                     if (consonants.contains(x.charAt(i + 1) + ""))
                         check = true;
+                    else
+                        check = false;
                 }
             }
             if(check=true){

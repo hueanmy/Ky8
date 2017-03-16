@@ -1,0 +1,34 @@
+package Rule;
+
+/**
+ * Created by katie on 15/03/2017.
+ */
+public class Rule30_31_33 extends Rule {
+    @Override
+    public boolean isValid(String x) {
+        String nguyenam = "eyio"
+            + "èéẹẻẽ"+"ê"+"ềếệễể"
+            + "ùúụủũ" + "ư" + "ừứựửữ"
+            + "ìíịỉĩ"
+            + "òóọỏõ" + "ô" + "ồốộổỗ" + "ơ" + "ờớợởỡ"
+            + "àáạảã" + "â" + "ầấậẩẫ" + "ă" + "ằắặẳẵ"
+            + "ỳýỵỷỹ"
+            ;
+        String phuamkhongdivs_ì = "q r t p s d g h k l x c v b đ";
+        for(int i=0;i<x.length()-1;i++){
+            if("ì ỉ ĩ".contains(x.charAt(i)+"")){
+               if(nguyenam.contains(x.charAt(i+1)+""))
+                   return false;
+               if(phuamkhongdivs_ì.contains(x.charAt(i+1)+""))
+                   return false;
+            }
+        }
+
+        return true;
+    }
+
+    @Override
+    public void showError() {
+        System.out.println("Rule30_31_33 error");
+    }
+}

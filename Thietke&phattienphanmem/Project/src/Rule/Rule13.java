@@ -7,17 +7,17 @@ public class Rule13 extends Rule {
     @Override
     public boolean isValid(String x) {
         boolean check = false;
-        String consonants = "n c";
-        if(consonants.contains(x.charAt(x.length()-1)+"")) {
+        String consonants = "h g";
+        if(x.endsWith(consonants)) {
             check = true;
         }
         if(check=true){
-            if(!"h g".contains(x.charAt(x.length()-2)+"")){
-                if("n".contains(x.charAt(x.length()-1)+""))
+            if(!"n c".contains(x.charAt(x.length()-2)+"")){
+                if("h".contains(x.charAt(x.length()-1)+""))
                     return false;
             }
-            if(!"h".contains(x.charAt(x.length()-2)+"")){
-                if("c".contains(x.charAt(x.length()-1)+""))
+            if(!"n".contains(x.charAt(x.length()-2)+"")){
+                if("g".contains(x.charAt(x.length()-1)+""))
                     return false;
             }
         }
@@ -26,6 +26,6 @@ public class Rule13 extends Rule {
 
     @Override
     public void showError() {
-
+        System.out.println("Rule13 error");
     }
 }
