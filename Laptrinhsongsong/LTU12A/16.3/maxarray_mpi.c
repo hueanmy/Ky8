@@ -9,24 +9,46 @@
 	Tim max toan cuc tren mang moi nay 
 5. In ra tong max*/
 #include <stdio.h>
-// #include <mpi.h>
+#include <stdlib.h>
+#include <mpi.h>
 #include <malloc.h>
 
 #define N 20
 
-int main(){
-	int NP,*A,i, max;
+int main(int argc,char **argv){
+	int NP,*A,i, max, rank, Mc;
 	int tong =0;
-	A = (int *)malloc(N*size(int));
-	for(int =0;i<N;i++){
+
+	MPI_Init(&argc,&argv );
+	MPI_Comm_size(MPI_COMM_WORLD,&NP);
+	MPI_Comm_rank(MPI_COMM_WORLD,&rank);
+	MPI_Status thongbao;
+	int *Ac;
+	Mc = N/NP;
+
+	Ac = (int *)malloc(Mc*sizeof(int));
+	A = (int *)malloc(N*sizeof(int));
+
+	//phan tan du lieu
+
+	MPI_Scatter(A,Mc,MPI_INT,Ac,Mc,MPI_INT,0, MPI_COMM_WORLD);
+
+
+	for(int i =0;i<N;i++){
 		*(A+i) = (-(i*i)-5*i +10);
 		tong += *(A+i);
 	}
+	// MPI_Send(Ac,1,MPI_INT,0,rank,MPI_COMM_WORLD);
 	max = *(A+0);
 	for(int i=0;i<N;i++){
 		if(*(A+i)>max) max = *(A+i);
 	}
-	printf("tong: %d" , tong);
-	printf("max: %d" , max);
 
+
+
+
+
+	printf("tong: %d\n" , tong);
+	printf("max: %d\n" , max);
+	return 0;
 }
