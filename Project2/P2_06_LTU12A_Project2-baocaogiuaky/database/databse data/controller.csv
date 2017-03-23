@@ -1,0 +1,13 @@
+1,UserController,Quản lý user,2017-03-15 13:50:59,2017-03-15 13:50:59
+2,AssigneeIntern,Quản lý phân công thực tập ,2017-03-15 13:50:59,2017-03-15 13:50:59
+3,CompanyController,Quản lý công ty,2017-03-15 13:50:59,2017-03-15 13:50:59
+4,CompanyRateController,Quản lý đánh giá sinh viên thực tập ,2017-03-15 13:50:59,2017-03-15 13:50:59
+5,EmployeeController,Quản lý nhân viên công ty,2017-03-15 13:50:59,2017-03-15 13:50:59
+6,GroupController,Quản lý group,2017-03-15 13:54:24,2017-03-15 13:54:24
+7,InterController,Quản lý thực tập ,2017-03-15 13:54:24,2017-03-15 13:54:24
+8,PermissionController,Quản lý phân quyền ,2017-03-15 13:54:24,2017-03-15 13:54:24
+9,RateController,Quản lý đánh giá thực tập của giáo viên,2017-03-15 13:54:24,2017-03-15 13:54:24
+10,StudentController,Quản lý sinh viên,2017-03-15 13:54:24,2017-03-15 13:54:24
+11,TeacherController,Quản lý giảng viên,2017-03-15 13:54:24,2017-03-15 13:54:24
+12,TopicController,Quản lý đề tài,2017-03-15 13:54:24,2017-03-15 13:54:24
+13,SchoolController,Quản lý lớp học và văn phòng,2017-03-15 13:54:24,2017-03-15 13:54:24

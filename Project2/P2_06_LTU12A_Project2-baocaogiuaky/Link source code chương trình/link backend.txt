@@ -1,0 +1,3 @@
+Link cloude server heroku:  project-2-ltu-06.herokuapp.com
+
+Link code backend: https://github.com/dinhquyf0/project-2

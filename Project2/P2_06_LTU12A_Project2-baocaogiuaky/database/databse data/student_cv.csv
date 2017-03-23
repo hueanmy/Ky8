@@ -1,0 +1,2 @@
+id,student_id,name,avatar,position,dateofbirth,gender,phone,email,address,link,intent,skill,hobby,year_start,year_stop,grade,school,major,cpa,majorskill,otherskill,created_at,updated_at
+1,22,Mai_CV,,"intern ruby",1993-09-09,1,01692630370,ltmai93@gmail.com,"Thanh Hóa",,"trở thành dev",,"nghe nhạc",2013,2018,4,"Đại học bách khoa hà nội","Công nghệ thông tin",3.05,Java,C,2017-03-22,2017-03-22

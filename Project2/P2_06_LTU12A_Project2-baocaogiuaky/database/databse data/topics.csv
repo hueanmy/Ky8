@@ -1,0 +1,3 @@
+id,title,categories,desciption,no_interns,content,timelimit,status,start,stop,link_topic,employee_id,created_at,updated_at,is_accept
+1,Phát hiện tấn công website ,Security,Phát hiện tấn công website sử dụng thuật toán Naive Bayes,3,Tìm hiểu các hình thức tấn công website. Thuật toán naive bayes,3months,0,2017-01-03,2017-04-03,,62,2016-12-15,2016-12-25,0
+2,Thử nghiệm Snort,Security,Thử nghiệm luật Snort,2,Tìm hiểu và các luật Snort. Xây dựng chương trình thử nghiệm,3months,0,2017-01-02,2017-04-02,,62,2016-12-16,2016-12-26,1

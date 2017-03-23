@@ -1,0 +1,7 @@
+id,name,description,updated_at,created_at
+1,admin,"quản lý hệ thống","2017-03-15 13:36:59","2017-03-15 13:36:59"
+2,teacher_instructions,"giáo viên hướng dẫn thực tập","2017-03-15 13:39:13","2017-03-15 13:39:13"
+3,teacher_managers,"giáo viên phụ trách thực tập","2017-03-15 13:39:13","2017-03-15 13:39:13"
+4,"company's agents","đại diện doanh nghiệp","2017-03-15 13:39:13","2017-03-15 13:39:13"
+5,"company's instructors","người hướng dẫn tại doanh nghiệp","2017-03-15 13:39:13","2017-03-15 13:39:13"
+6,students,"sinh viên đăng ký thực tập","2017-03-15 13:39:13","2017-03-15 13:39:13"
